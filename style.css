@@ -45,6 +45,7 @@ body {
   cursor: pointer;
   font-size: 18px;
   margin-top: 10px;
+  text-align: center;
 }
 
 #login-form button[type="submit"]:hover {
