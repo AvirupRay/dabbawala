@@ -1,0 +1,16 @@
+<script>
+  const form = document.querySelector('form');
+  const userType = document.querySelector('#user-type');
+  const loginId = document.querySelector('#login-id');
+  const password = document.querySelector('#password');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const userData = {
+      userType: userType.value,
+      loginId: loginId.value,
+      password: password.value
+    };
+    console.log(userData);
+  });
+</script>
