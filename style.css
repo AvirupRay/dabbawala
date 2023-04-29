@@ -1,6 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-image: url("library-image.jpg");
-  background-size: cover;        font-family: Arial, sans-serif;
+  background-image: url("images/login\ bg.jpg");
+  background-size:120vh 75vw; 
+  font-family: Arial, sans-serif;
 }
 
 #login-form {
@@ -10,7 +16,7 @@ body {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 50px;
-  box-shadow: 0px 0px 10px #cccccc;
+  box-shadow: 0px 0px 20px #cccccc;
   background-color: rgba(255, 255, 255, 0.5); /* Set background color with alpha value */
   backdrop-filter: blur(5px); /* Apply blur filter */
   position: center;
@@ -39,13 +45,13 @@ body {
 #login-form button[type="submit"] {
   background-color: #007bff;
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 15px 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
-  margin-top: 10px;
-  text-align: center;
+  margin-top: 5vh;
+  margin-left: 7vw;
 }
 
 #login-form button[type="submit"]:hover {
@@ -55,4 +61,35 @@ body {
 #login-form label {
   font-size: 18px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 600px)
+{
+  #login-form {
+    width: 350px;
+    height: 400px;
+    margin: 100vh auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0px 0px 20px #cccccc;
+    background-color: rgba(255, 255, 255, 0.5); /* Set background color with alpha value */
+    backdrop-filter: blur(5px); /* Apply blur filter */
+    position: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  #login-form button[type="submit"] {
+    background-color: #fff;
+    color: #ffffff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 5vh;
+    margin-left: 7vw;
+  }
 }
