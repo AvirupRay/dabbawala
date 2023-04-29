@@ -114,7 +114,7 @@ body{
     position: absolute;
     left: 8vw;
     top:15vh;
-    width:9vw;
+    width:200px;
     border-radius: 100%;
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
     
@@ -163,4 +163,67 @@ a{
     color: #000000;
     text-decoration: none;
     letter-spacing: 1px;
+}
+@media screen and (max-width: 600px){
+    .navigation-manual{
+        position: absolute;
+        width: 350px;
+        margin-top: 250px;
+        display: flex;
+        justify-content: right;
+    }
+    .navigation-auto{
+        position: absolute;
+        display: flex;
+        width: 350px;
+        margin-top: 750px;
+        justify-content: right;
+        
+    }
+    .left{
+        left: 150px;
+        top:200px;
+        width: 50vw;
+        height: 50vh;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.829);
+        box-shadow: 0px 0px 20px #030000;
+        border-radius: 10px;
+    }
+    .left img{
+        position: absolute;
+        left: 13vw;
+        top:7vh;
+        width:140px;
+        border-radius: 100%;
+        box-shadow: 0px 0px 20px rgb(0, 0, 0);
+        
+    }
+    .login{
+        padding-top: 10px;
+        text-align:center;
+        background-color: #ecafaf;
+        width:35vw;
+        height:5vh;
+        position: absolute;
+        left:50px;
+        top:260px;
+        cursor: pointer;
+        border-radius: 70px;
+        box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    }
+    .signup{
+        padding-top: 10px;
+        text-align:center;
+        color:#fff;
+        background-color: #ecafaf;
+        width:35vw;
+        height:5vh;
+        position: absolute;
+        left:50px;
+        top:350px;
+        cursor: pointer;
+        border-radius: 70px;
+        box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    }
 }
