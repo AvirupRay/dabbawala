@@ -4,7 +4,7 @@
 }
 
 .header{
-    background-color: rgba(66, 1, 1, 0.89);
+    background-color: rgb(172, 16, 47) ;
     box-shadow: 0px 0px 10px black;
     /* border-radius: 0px 0px 10px 10px; */
 }
@@ -18,16 +18,44 @@
 .header input{
     width:30vw;
     height:5vh;
-    padding: 2px; 
+    padding-left: 20px; 
     font-size: 20px;
     position: absolute;
     top: 2.5vh;
-    left: 25vw;
+    left: 35vw;
     border-radius: 50px;
-    border: 1px solid black;
+    border: 2px solid #fff;
     box-shadow: 0px 0px 10px black;
 
 }
+
+.header ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.header ul li{
+    display: inline-block;
+    line-height:80px;
+    margin:5px 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    
+}
+.header ul li a{
+    color:#000;
+    font-size: 17px;
+    text-transform: upper-case;
+    font-size: 28px;
+    text-decoration: none;
+}
+a.active,a:hover{
+    background: #ffffff;
+    transition: 0.5s;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 .footer{
     background-color: rgb(172, 16, 47);
     position: absolute;
