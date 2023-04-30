@@ -9,8 +9,40 @@
     /* border-radius: 0px 0px 10px 10px; */
 }
 .footer{
-    background-color: black;
-    top: 100px;
+    background-color: rgb(172, 16, 47);
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+
+}
+#box
+{
+    background-color: crimson;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    border-right: 2px solid white;
+}
+#abt:hover
+{
+    background-color: whitesmoke;
+    transition: 1s;
+    color: black;
+}
+#abt
+{
+    background-color:rgb(172, 16, 47) ;
+    border-radius: 30px;
+    border: 2px solid whitesmoke;
+    height: 35px;
+    width: 100px;
+    margin-top: 10px;
+    color: whitesmoke;
+    
 }
 
 .header img{
