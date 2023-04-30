@@ -11,9 +11,8 @@ body
 #login_form
 {
     width: 400px;
+    margin: auto;
     margin-top: 50px;
-    margin-left:450px;
-    margin-right:400px;
     height: 500px;
     background-color: blanchedalmond;
     text-align: center;
