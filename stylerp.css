@@ -4,7 +4,7 @@
 }
 body
 {
-    background-image: url(foodtexcolor.jpg);
+    background-image: url(images/foodtexcolor.jpg);
     background-size:100%;
     font-family: Arial, sans-serif;
 }
@@ -45,6 +45,7 @@ body
 #submit:hover
 {
     background-color: crimson;
+    transition: 1s;
 }
 #submit
 {
