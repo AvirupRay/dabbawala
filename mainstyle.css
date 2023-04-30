@@ -47,8 +47,14 @@
     line-height:80px;
     margin:5px 20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    
-    
+}
+
+.header ul li a{
+    color:#000;
+    font-size: 17px;
+    text-transform: upper-case;
+    font-size: 28px;
+    text-decoration: none;
 }
 .header ul li a:hover{
     background: #ffffff;
