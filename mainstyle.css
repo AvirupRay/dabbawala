@@ -8,6 +8,26 @@
     box-shadow: 0px 0px 10px black;
     /* border-radius: 0px 0px 10px 10px; */
 }
+
+.header img{
+    width:80px;
+    border-radius: 100%;
+    padding: 10px 30px;
+}
+
+.header input{
+    width:30vw;
+    height:5vh;
+    padding: 2px; 
+    font-size: 20px;
+    position: absolute;
+    top: 2.5vh;
+    left: 25vw;
+    border-radius: 50px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px black;
+
+}
 .footer{
     background-color: rgb(172, 16, 47);
     position: absolute;
@@ -43,10 +63,4 @@
     margin-top: 10px;
     color: whitesmoke;
     
-}
-
-.header img{
-    width:100px;
-    border-radius: 100%;
-    padding: 10px;
 }
