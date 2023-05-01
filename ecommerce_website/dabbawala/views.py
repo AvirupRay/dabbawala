@@ -25,10 +25,12 @@ signup_page = loader.get_template('register.html')
 # TODO: creating view functions
 
 # Front page
+@unauth_user_permission
 def index(request):
     return HttpResponse(front_page.render({}, request))
 
 # user registration
+@unauth_user_permission
 def register(request):
     if request.method == 'POST':
         email = request.POST['email']
@@ -74,6 +76,10 @@ def login(request):
         # checking existence of user
         if user is not None:
             auth.login(request, user)
+            # adding logged in user email to the session
+            request.session['user_email'] = user.email
+            print("Logged in User email : ", request.session.get('user_email'))
+
             return HttpResponseRedirect('/homepage/')
 
         else:
