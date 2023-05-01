@@ -118,22 +118,21 @@ body
 }
 .featured
 {
-    background-color: antiquewhite;
+    background-color: rgba(250, 235, 215, 0);
     margin: 10px;
     height: 150px;
     width: 150px;
-    border: 2px solid black;
+    border: none;
     display: inline-block;
     text-align: center;
     border-radius: 30px;
-    box-shadow: 3px 5px 0px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 .featured:hover
 {
-    background-color: crimson;
+    background-color: rgba(220, 20, 60, 0.6);
     box-shadow: 3px 5px 0px black;
-    transition: 0.5s;
+    transition: 1s;
     color: white;
-    border: 5px solid black;
+    /*border: 2px solid black;*/
 }
