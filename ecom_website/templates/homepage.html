@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-DabbaWala</title>
+</head>
+<body>
+
+    {% if user.is_authenticated %}
+
+    {% for user in User %}
+    {% endfor %}
+
+    <h1>Welcome {{user.name}}</h1>
+    <a href="{% url 'logout' %}">logout</a>
+
+    {% if role == 'customer' %}
+    <h2>You are Customer</h2>
+
+    <br>
+    <h2>Food Items</h2>
+    <table>
+    {% for item in items %}
+        <tr>
+            <td><img src="{{item.items_img}}"></td>
+            <td>{{item.title}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.descrption}}</td>
+        </tr>
+    {% endfor %}
+    </table>    
+
+    {% endif %}
+
+    {% else %}
+    <h1>Home Page DabbaWala</h1>
+    <h2>Welcome to DabbaWala</h2>
+    <a href="{% url 'login' %}">login</a>
+    <a href="{% url 'register' %}">SignUp</a>
+
+    {% endif %}
+
+</body>
+</html>
