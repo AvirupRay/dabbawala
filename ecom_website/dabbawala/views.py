@@ -109,7 +109,7 @@ def homepage(request):
         print(f"Logged in user is a : ", role)
 
         # loading the Product table to display the items
-        items = Product.objects.all().values()
+        items = Product.objects.all()
 
         context = {
             'role':role,

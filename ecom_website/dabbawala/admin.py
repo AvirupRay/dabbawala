@@ -7,7 +7,7 @@ class AdminUser(admin.ModelAdmin):
     list_display = ['email', 'name']
 
 class AdminProduct(admin.ModelAdmin):
-    list_display = ['title', 'price', 'descrption']
+    list_display = ['title', 'price', 'descrption', 'items_img']
 
 
 # Register your models here.

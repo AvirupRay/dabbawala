@@ -12,7 +12,7 @@ class Product(models.Model):
     title = models.CharField(max_length = 100, null = True)
     price = models.CharField(max_length = 10, null = True)
     descrption = models.CharField(max_length = 1000, null = True)
-    items_img = models.ImageField(upload_to = 'uploads/food_items')
+    items_img = models.ImageField(upload_to = 'food_items')
 
 
 class User(AbstractUser):
