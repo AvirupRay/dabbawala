@@ -128,6 +128,26 @@ body
     border-radius: 30px;
     cursor: pointer;
 }
+
+.box{
+    margin:4vh 0;
+    width:100vw;
+    height:200px;
+    background-color: rgba(255, 255, 255, 0.337);
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.4);
+    border-radius:10px;
+
+}
+.slideimg img{
+    width: 150px;
+    border-radius: 100%;
+    padding:5px 17px;
+    cursor: pointer;
+}
+.slideimg p{
+    position: absolute;
+}
+
 .featured:hover
 {
     background-color: rgba(220, 20, 60, 0.6);
