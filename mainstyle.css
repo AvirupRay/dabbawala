@@ -202,8 +202,9 @@ body
     color: white;
 }
 
-.cart:hover{
-    
+.cart:hover
+{
+    background: #6b0706;
 }
 
 
