@@ -4,8 +4,9 @@
 }
 body
 {
-    background-image: url(images/foodtexcolor.jpg);
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)), url(images/foodtexcolor.jpg);
     background-size:100%;
+    
 }
 
 .header{
@@ -19,6 +20,7 @@ body
     border-radius: 100%;
     padding: 10px 30px;
 }
+
 
 .header p{
     position: absolute;
@@ -72,6 +74,7 @@ body
     border-radius: 10px;
     padding: 5px;
 }
+
 
 .footer{
     background-color: rgb(172, 16, 47);
@@ -146,6 +149,7 @@ body
 }
 .slideimg p{
     position: absolute;
+    font-weight: bold;
 }
 
 .featured:hover
@@ -156,3 +160,51 @@ body
     color: white;
     /*border: 2px solid black;*/
 }
+
+.button button{
+    position: absolute;
+    top: 60vh;
+    height: 60px;
+    width:200px;
+    margin:0 35px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #111;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+.button button a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.button button:hover{
+    color: #fff;
+    background: #f32121;
+    box-shadow: 0 0 10px #f32121,0 0 40px #f32121,0 0 80px #f32121;
+    transition: 0.5s;
+}
+
+.cart{
+    position:fixed;
+    padding: 23px 5px 13px 25px;
+    bottom: 13vh;
+    right:1vw;
+    background: #f32121;
+    width:2.5vw;
+    height:4vh;
+    border-radius: 100px;
+    color: white;
+}
+
+.cart:hover{
+    
+}
+
+
+
