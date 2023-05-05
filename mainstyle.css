@@ -8,11 +8,10 @@ body
     background-size:100%;
     
 }
-
+/* header */
 .header{
     background-color: rgb(172, 16, 47) ;
     box-shadow: 0px 0px 10px black;
-    /* border-radius: 0px 0px 10px 10px; */
 }
 
 .header img{
@@ -42,13 +41,6 @@ body
     border: 2px solid #fff;
     box-shadow: 0px 0px 10px black;
 }
-/* .header svg{
-    position:absolute;
-    top:40px;
-    left: 1220px;
-    width: 2vw;
-} */
-
 .header ul{
     float: right;
     margin-right: 20px;
@@ -76,10 +68,11 @@ body
 }
 
 
+/* footer */
 .footer{
     background-color: rgb(172, 16, 47);
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    top: 200vh;
     height: 100px;
     width: 100%;
     color: aliceblue;
@@ -119,6 +112,7 @@ body
     margin: 5px;
     border-radius: 20px;
 }
+/* Top picks */
 .featured
 {
     background-color: rgba(250, 235, 215, 0);
@@ -134,7 +128,7 @@ body
 
 .box{
     margin:4vh 0;
-    width:100vw;
+    width:99vw;
     height:200px;
     background-color: rgba(255, 255, 255, 0.337);
     box-shadow: 2px 2px 30px rgba(0,0,0,0.4);
@@ -160,7 +154,7 @@ body
     color: white;
     /*border: 2px solid black;*/
 }
-
+/* buttons */
 .button button{
     position: absolute;
     top: 60vh;
@@ -189,7 +183,7 @@ body
     box-shadow: 0 0 10px #f32121,0 0 40px #f32121,0 0 80px #f32121;
     transition: 0.5s;
 }
-
+/* cart */
 .cart{
     position:fixed;
     padding: 23px 5px 13px 25px;
@@ -200,12 +194,48 @@ body
     height:4vh;
     border-radius: 100px;
     color: white;
+    z-index: 2;
 }
 
+<<<<<<< HEAD
 .cart:hover
 {
     background: #6b0706;
+=======
+.cart:hover{
+    background: #6b0707;
+}
+/* customer Review */
+.review{
+    position: absolute;
+    left:30vw;
+    top:200vh;
+    background: #000000b7;
+    width: 20vw;
+    height: 45vh;
+    border-radius: 10px;
 }
 
+.review p{
+    color: red;
+    font-size: 30px;
+    margin-left: 120px;  
 
+}
+.review p:last-child{
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 25px;
+    margin-left: 2px;
+    text-align: center;
+
+}
+.review  img{
+    border-radius: 150px;
+    width: 150px;
+    background:#f32121;
+    padding:3px;
+    margin: 10px 120px;
+    
+>>>>>>> 814b5896512263102422ba7d513c020f03b30ac0
+}
 
