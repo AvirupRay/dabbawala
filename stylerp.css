@@ -1,6 +1,8 @@
 *{
     margin:0;
     padding:0;
+    color: RGB(242 218 0);
+    font-size: 20px;
 }
 body
 {
@@ -8,31 +10,42 @@ body
     background-size:100%;
     font-family: Arial, sans-serif;
 }
+::-webkit-input-placeholder { 
+    color: rgb(242 218 0);
+    background: rgb(57, 57, 57);
+    background-size: contain;
+    
+ }
+ 
+
 #login_form
 {
-    width: 400px;
+    padding-top: 50px;
+    width: 600px;
     margin: auto;
     margin-top: 50px;
-    height: 500px;
-    background-color: blanchedalmond;
+    height: 700px;
+    background-color: rgb(59, 59, 59);
     text-align: center;
     border-radius: 5%;
-    box-shadow: 0px 0px 20px #cccccc;
-    opacity: .9;
+    box-shadow: 0px 0px 20px #000000;
+    opacity: .94;
 }
 #welcome
 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
 }
 #login
 {
+    margin-top: 100px;
     height: 30px;
     width: 250px;
     text-align: left;
     padding-left: 10px;
     opacity: 1;
     border: none;
-    background-color: blanchedalmond;
+    background-color: rgb(57, 57, 57);
     border-bottom: 2px solid black;
 }
 #pass
@@ -43,26 +56,28 @@ body
     padding-left: 10px;
     opacity: 1;
     border: none;
-    background-color: blanchedalmond;
+    background-color: rgb(57, 57, 57);
     border-bottom: 2px solid black;
 }
 #submit:hover
 {
-    background-color: crimson;
+    background-color: rgb(37,37,37);
+    -webkit-text-fill-color:rgb(242,218,0);
     transition: 0.5s;
 }
 #submit
 {
-    height: 30px;
-    width: 80px;
+    height: 40px;
+    width: 100px;
     border-radius: 20px;
-    background-color:cornflowerblue;
-    -webkit-text-fill-color: aliceblue;
+    background-color:RGB(242 218 0);
+    -webkit-text-fill-color: rgb(57,57,57);
     opacity: 1;
     border: none;
 }
 a:hover
 {
-    color: crimson;
+    color: rgb(255, 0, 0);
+    -webkit-text-fill-color: RGB(242 218 0);
     transition: 0.5s;
 }
