@@ -197,11 +197,9 @@ body
     z-index: 2;
 }
 
-<<<<<<< HEAD
 .cart:hover
 {
     background: #6b0706;
-=======
 .cart:hover{
     background: #6b0707;
 }
@@ -236,6 +234,5 @@ body
     padding:3px;
     margin: 10px 120px;
     
->>>>>>> 814b5896512263102422ba7d513c020f03b30ac0
 }
 
