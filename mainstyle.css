@@ -242,8 +242,36 @@ body
     margin: 10px 120px;
     
 }
-.h1{
-    
 
+.card{
+    position: relative;
+    background: rgba(0, 0, 0, 0.753);
+    width:550px;
+    height: 700px;
+    top:15vh;
+    left:35vw;
+    border-radius: 50px;
 }
-
+.card-division{
+    position: absolute;
+    background: #6b0707;
+    width: 550px;
+    height:200px;
+    border-radius:50px 50px 0 0;
+}
+.card img{
+    position: relative;
+    border-radius: 100%;
+    width: 250px;
+    top: 20px;
+    left: 7vw;
+    padding: 10px; 
+    background: #6b0707
+}
+.card p{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    word-spacing: 2px;
+}
