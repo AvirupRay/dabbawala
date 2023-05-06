@@ -3,6 +3,30 @@
     margin: 0;
     padding: 0;
 }
+body
+{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)), url(images/foodtexcolor.jpg);
+    background-size:100%;
+    
+}
+
+.cart{
+    position:fixed;
+    padding: 23px 5px 13px 25px;
+    bottom: 8vh;
+    right:1vw;
+    background: #f32121;
+    width:2.5vw;
+    height:4vh;
+    border-radius: 100px;
+    color: white;
+    z-index: 2;
+}
+
+.cart:hover{
+    background: #6b0707;
+}
+
 .header{
     background-color: rgb(172, 16, 47) ;
     box-shadow: 0px 0px 10px black;
@@ -70,6 +94,10 @@
 }
 .breakfast
 {
+    position: relative;
+    flex-wrap:wrap;
+    align-content: space-between;
+    top:50px;
     height: 500px;
     width: auto;
     text-align: center;
@@ -86,17 +114,20 @@
 {
     height: 400px;
     width: 250px;
-    margin:auto;
+    margin:5px;
+    padding: 10px;
     display: inline-block;
     position: relative;
     font-size: 15pt;
-    border: 5px solid white;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 20px;
+    box-shadow: 2px 2px 40px rgba(0,0,0,0.4);
 }
 .products:hover
 {
-    border-left: 5px solid black;
-    border-right: 5px solid black;
-    transition: 1s;
+    border: 3px solid rgba(0, 0, 0, 0.507);
+    transition: 0.2s;
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.808);
 }
 .products b
 {
@@ -130,6 +161,28 @@
 .add:hover
 {
     background-color: crimson;
+}
+
+.lunch
+{
+    position: relative;
+    flex-wrap:wrap;
+    align-content: space-between;
+    top:200px;
+    height: 500px;
+    width: auto;
+    text-align: center;
+}
+
+.dinner
+{
+    position: relative;
+    flex-wrap:wrap;
+    align-content: space-between;
+    top:350px;
+    height: 500px;
+    width: auto;
+    text-align: center;
 }
 
 
