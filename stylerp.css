@@ -12,7 +12,7 @@ body
 }
 ::-webkit-input-placeholder { 
     color: rgb(242 218 0);
-    background: rgb(57, 57, 57);
+    background: rgb(59, 59, 59);
     background-size: contain;
     
  }
@@ -40,24 +40,24 @@ body
 {
     margin-top: 100px;
     height: 30px;
-    width: 250px;
+    width: 350px;
     text-align: left;
     padding-left: 10px;
     opacity: 1;
     border: none;
     background-color: rgb(57, 57, 57);
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(37,37,37);
 }
 #pass
 {
     height: 30px;
-    width: 250px;
+    width: 350px;
     text-align: left;
     padding-left: 10px;
     opacity: 1;
     border: none;
     background-color: rgb(57, 57, 57);
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(37,37,37);
 }
 #submit:hover
 {
@@ -74,6 +74,7 @@ body
     -webkit-text-fill-color: rgb(57,57,57);
     opacity: 1;
     border: none;
+    cursor: pointer;
 }
 a:hover
 {

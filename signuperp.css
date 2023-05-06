@@ -47,7 +47,7 @@ body
 #passs
 {
     height: 30px;
-    width: 250px;
+    width: 350px;
     text-align: left;
     padding-left: 10px;
     opacity: 1;
@@ -67,14 +67,15 @@ body
     height: 40px;
     width: 100px;
     border-radius: 20px;
-    background-color:RGB(242 218 0);
+    background-color:rgb(242 218 0);
     -webkit-text-fill-color: rgb(57,57,57);
     opacity: 1;
     border: none;
+    cursor: pointer;    
 }
 a:hover
 {
-    color: rgb(255, 0, 0);
-    -webkit-text-fill-color: RGB(242 218 0);
+    -webkit-text-fill-color: rgb(242 218 0);
     transition: 0.5s;
+
 }
