@@ -82,7 +82,7 @@ body
 .footer{
     background-color: rgb(172, 16, 47);
     position: relative;
-    top: 230vh;
+    top: 250vh;
     height: 100px;
     width: 100%;
     color: aliceblue;
@@ -137,8 +137,8 @@ body
 }
 
 .box{
-    margin:4vh 23vw;
-    width: 55vw;
+    margin:4vh 20vw;
+    width: 60vw;
     height:530px;
     background-color: rgba(255, 255, 255, 0.521);
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.63);
@@ -146,7 +146,7 @@ body
 
 }
 .slideimg img{
-    width: 150px;
+    width: 170px;
     border-radius: 100%;
     padding:40px 27px;
     cursor: pointer;
@@ -208,13 +208,15 @@ body
 }
 
 .cart:hover{
-    background: #6b0707;
+    background: #f32121;
+    box-shadow: 0 0 10px #f32121,0 0 40px #f32121,0 0 80px #f32121;
+    transition: 0.5s;
 }
 /* customer Review */
 .review{
     position: absolute;
     left:30vw;
-    top:265vh;
+    top:290vh;
     background: #000000b7;
     width: 20vw;
     height: 45vh;
@@ -407,10 +409,10 @@ body
 
 .container{
     position: relative;
-    top:100px;
+    top:10px;
     left:-60px;
     width: 101vw;
-    height: 100vh;
+    height: 120vh;
     display:flex;
     align-items: center;
     justify-content: center;
