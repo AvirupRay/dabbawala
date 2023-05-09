@@ -19,12 +19,14 @@
     <h1>Welcome {{user.name}}</h1>
     <a href="{% url 'logout' %}">logout</a>
 
+    
+
     {% if role == 'customer' %}
     <h2>You are Customer</h2>
 
     <br>
     <h2>Food Items</h2>
-    <table>
+    <div class="row">
     {% for item in items %}
     <div class="card" style="width: 18rem;">
         <img src="{{item.items_img.url}}" class="card-img-top" alt="...">
@@ -35,10 +37,11 @@
           <!-- <p class="card-text">
             
             </p> -->
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="{% url 'create_menu' %}" class="btn btn-primary">Add to menu</a>
         </div>
       </div>
     {% endfor %}
+    </div>
     
 
     {% endif %}

@@ -9,3 +9,4 @@ def unauth_user_permission(view_func):
         else:
             return view_func(request, *args, **kwargs)
     return check
+
