@@ -326,3 +326,30 @@ body
     left: 10%;
   }
 
+#breakfast
+{
+  height: 1px;
+  width: 1px;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  bottom: 0px;
+}
+#lunch
+{
+  height: 1px;
+  width: 1px;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  bottom: 0px;
+}
+#dinner
+{
+  height: 1px;
+  width: 1px;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  bottom: 0px;
+}
