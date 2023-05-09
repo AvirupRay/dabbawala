@@ -7,6 +7,9 @@
     <title>main page</title>
     <link rel="stylesheet" href="mainstyle.css">
     <link href="images/logo.jpg" alt="logo">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
     <div class="header">
@@ -65,7 +68,7 @@
           </svg></a>
     </div>
 
-    <h1 style="color:rgb(172, 16, 47);position: relative;top:135vh;">Customer Review..........................................................................................................................................................................................................</h1>
+    <h1 style="color:rgb(255, 255, 255);position: relative;top:165vh;background: rgb(172, 16, 47);">Customer Review................................................................................................................................................................................................................</h1>
     
     <div class="review" style="left: 2vw">
         <div class="profile1">
@@ -109,5 +112,85 @@
         </div>
         Wallah Habibi
     </div>
+    <h1 style="color:rgb(255, 255, 255);position: relative;top:10vh;background: rgb(172, 16, 47)">About Us..........................................................................................................................................................................................................................</h1>
+    <!-- slider 1 -->
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+
+            <div class="slide first">
+                <img src="images/slides/s1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/slides/s2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/slides/s3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/slides/s4.jpg" alt="">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+              
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+          
+     </div>
+     <script type="text/javascript">
+     var counter = 1;
+     setInterval(function(){
+        document.getElementById('radio'+ counter).checked = true;
+        counter++;
+        if(counter > 4){
+            counter = 1;
+        }
+     }, 5000);
+     </script>   
+    <!-- end slider 1 -->
+    <h1 style="color:rgb(255, 255, 255);position: relative;top:33vh;background: rgb(172, 16, 47)">Offers...................................................................................................................................................................................................................................</h1>
+    <!-- slider 2 -->
+    <div class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="images/offer/swiggy-new-user-offer.jpg" alt="" style="padding-left: 270px;"></div>
+              <div class="swiper-slide"><img src="images/offer/coupon.jpg" alt="" style="padding-left: 230px;"></div>
+              <div class="swiper-slide"><img src="images/offer/banner 1.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/offer/1546252575451.png" alt="" style="padding-left: 300px;"></div>
+            </div>
+        
+        </div>
+    </div>
+    <!-- end slider 2 -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+    const swiper = new Swiper('.swiper', {
+    autoplay:{
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+
+});
+    </script>
+
 </body>
 </html>
