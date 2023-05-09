@@ -26,7 +26,7 @@ body
     bottom: 8vh;
     right:1vw;
     background: #f32121;
-    width:2.5vw;
+    width:2.3vw;
     height:4vh;
     border-radius: 100px;
     color: white;
@@ -352,4 +352,24 @@ body
   background-color: rgba(0,0,0,0);
   position: absolute;
   bottom: 0px;
+}
+.menu{
+  position:fixed;
+  padding: 18px;
+  bottom: 18vh;
+  right:1vw;
+  background: #f32121;
+  width:2vw;
+  height:4vh;
+  border-radius: 100px;
+  color: white;
+  z-index: 2;
+}
+.menu:hover
+{
+  background: #6b0707;
+}
+.hide
+{
+  display: none;
 }
