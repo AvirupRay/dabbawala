@@ -137,18 +137,18 @@ body
 }
 
 .box{
-    margin:4vh 0;
-    width:99vw;
-    height:200px;
-    background-color: rgba(255, 255, 255, 0.337);
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.4);
-    border-radius:10px;
+    margin:4vh 23vw;
+    width: 55vw;
+    height:530px;
+    background-color: rgba(255, 255, 255, 0.521);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.63);
+    border-radius:20px;
 
 }
 .slideimg img{
     width: 150px;
     border-radius: 100%;
-    padding:5px 17px;
+    padding:40px 27px;
     cursor: pointer;
 }
 .slideimg p{
@@ -166,7 +166,7 @@ body
 /* buttons */
 .button button{
     position: absolute;
-    top: 60vh;
+    top: 95vh;
     left: 43vw;
     height: 60px;
     width:200px;
@@ -214,7 +214,7 @@ body
 .review{
     position: absolute;
     left:30vw;
-    top:230vh;
+    top:265vh;
     background: #000000b7;
     width: 20vw;
     height: 45vh;
