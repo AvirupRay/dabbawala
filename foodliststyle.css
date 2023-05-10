@@ -34,7 +34,9 @@ body
 }
 
 .cart:hover{
-    background: #6b0707;
+  background: #f32121;
+  box-shadow: 0 0 10px #f32121,0 0 40px #f32121,0 0 80px #f32121;
+  transition: 0.5s;
 }
 
 .header{
@@ -252,7 +254,6 @@ body
     display: flex;
     bottom: 20px;
     left: 85px;
-    left:
     cursor: pointer;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -367,7 +368,9 @@ body
 }
 .menu:hover
 {
-  background: #6b0707;
+  background: #f32121;
+    box-shadow: 0 0 10px #f32121,0 0 40px #f32121,0 0 80px #f32121;
+    transition: 0.5s;
 }
 .hide
 {
