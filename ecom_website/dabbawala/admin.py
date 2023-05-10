@@ -15,6 +15,7 @@ class AdminCategory(admin.ModelAdmin):
 class AdminCartItem(admin.ModelAdmin):
     list_display = ['user_email', 'selected_day', 'breakfast_items', 'lunch_items', 'dinner_items', 'order_id', 'order_date', 'order_time']
 
+
 # Register your models here.
 
 admin.site.register(User, AdminUser)

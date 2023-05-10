@@ -414,6 +414,8 @@ def cart(request):
         total_week_price = 0
     print(total_week_price)
 
+    request.session['total_price'] = total_week_price
+    
     context = {
         # monday
         'monday_breakfast':monday_breakfast,
@@ -483,6 +485,7 @@ def command_order(request):
     user_name = user.name
     print(user_name)
     o_id = gen_od_id()
+    request.session['order_id'] = o_id
     for item in cart_item:
         o_date = date.today()
         now = datetime.now()
@@ -494,7 +497,15 @@ def command_order(request):
     return HttpResponseRedirect('/your_orders/')
 
 def your_orders(request):
-    return HttpResponse(order_list_page.render({}, request))
+    order_id = request.session.get('order_id')
+    total_price = request.session.get('total_price')
+
+    context = {
+        'order_id':order_id,
+        'total_price':total_price,
+    }
+    return HttpResponse(order_list_page.render(context, request))
+    # return HttpResponse(f"Thank for ordering from DabbaWala !\nYour order with ::\n\tOrder Id: {order_id}\n\tTotal Price: ₹ {total_price}\nhas been confirmed successfully")
 
 
 

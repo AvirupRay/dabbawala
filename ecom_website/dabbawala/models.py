@@ -56,4 +56,4 @@ class CartItem(models.Model):
     order_id = models.CharField(max_length = 20, null = True, blank = True)
     order_date = models.CharField(max_length = 20, null = True, blank = True)
     order_time = models.CharField(max_length = 10, blank = True, null = True)
-
+    # day_price = models.CharField(max_length = 10, blank = True, null = True) 
