@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/cartstyle.css' %}">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/mainstyle.css' %}">
+    <title>Your Cart</title>
 </head>
 <body>
     <div class="header">
@@ -20,10 +20,10 @@
         <p>DabbaWala</p>
         <img src="{% static 'images/cycle.png' %}" style="position: absolute; left: 28vw;">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="{% url 'homepage' %}">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="#">LogOut</a></li>
+            <li><a href="{% url 'profile' %}">Profile</a></li>
+            <li><a href="{% url 'logout' %}">LogOut</a></li>
         </ul>
     </div>
 
@@ -56,10 +56,11 @@
             <div class="cart-incard">
                 <h2>Dinner</h2>
                 {% for items in monday_dinner %}
-                <h4>{{items}}</h4>
+                    <h4>{{items}}</h4>
                 {% endfor %}
                 <tr><td>Total:{{mdtprice}}</td></tr>
             </div>
+            <div class="day-total">Grand Total: {{monday_total_price}}</div>
         </div>
         <div class="cart-card" style="top:100vh">
             <h1 style="position:absolute; left: 36vw; top: 2vh">TUESDAY</h1>
@@ -84,6 +85,7 @@
                 {% endfor %}
                 <tr><td>Total:{{tdtprice}}</td></tr>
             </div>
+            <div class="day-total">Grand Total: {{tuesday_total_price}}</div>
         </div>
         <div class="cart-card" style="top:190vh">
             <h1 style="position:absolute; left: 36vw; top: 2vh">WEDNESSDAY</h1>
@@ -108,6 +110,7 @@
                 {% endfor %}
                 <tr><td>Total:{{wdtprice}}</td></tr>
             </div>
+            <div class="day-total">Grand Total: {{wednesday_total_price}}</div>
         </div>
         <div class="cart-card" style="top:280vh">
             <h1 style="position:absolute; left: 36vw; top: 2vh">THURSDAY</h1>
@@ -132,6 +135,7 @@
                 {% endfor %}
                 <tr><td>Total:{{thdtprice}}</td></tr>
             </div>
+            <div class="day-total">Grand Total: {{thursday_total_price}}</div>
         </div>
         <div class="cart-card" style="top:370vh">
             <h1 style="position:absolute; left: 36vw; top: 2vh">FRIDAY</h1>
@@ -156,6 +160,7 @@
                 {% endfor %}
                 <tr><td>Total:{{fdtprice}}</td></tr>
             </div>
+            <div class="day-total">Grand Total: {{friday_total_price}}</div>
         </div>
         <div class="cart-card" style="top:460vh">
             <h1 style="position:absolute; left: 36vw; top: 2vh">SATURDAY</h1>
@@ -180,6 +185,7 @@
                 {% endfor %}
                 <tr><td>Total:{{sadtprice}}</td></tr>
             </div>
+            <div class="day-total">Grand Total: {{saturday_total_price}}</div>
         </div>
         <div class="cart-card" style="top:550vh">
             <h1 style="position:absolute; left: 36vw; top: 2vh">SUNDAY</h1>
@@ -204,8 +210,26 @@
                 {% endfor %}
                 <tr><td>Total:{{sudtprice}}</td></tr>
             </div>
-            <tr><td>Grand Total: {{sunday_total_price}} </td></tr>
+            <div class="day-total">Grand Total: {{sunday_total_price}}</div>
         </div>
     </div>
 </body>
+
+<style>
+
+    .day-total{
+        border:1px solid black;
+        position:absolute;
+        float:left;
+        width:87%;
+        text-align: center;
+        margin-top: 480px;
+        font-size: 2em;
+        background-color: beige;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+</style>
+
 </html>

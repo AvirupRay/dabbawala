@@ -27,7 +27,8 @@ front_page = loader.get_template('frontpage.html')
 login_page = loader.get_template('login.html')
 signup_page = loader.get_template('register.html')
 
-home_page = loader.get_template('homepage.html')
+home_page = loader.get_template('main.html')
+profile_page = loader.get_template('profile.html')
 create_menu_page = loader.get_template('menu.html')
 item_selection_page = loader.get_template('selectitem.html')
 
@@ -132,6 +133,19 @@ def homepage(request):
     else:
         return HttpResponse(home_page.render({}, request))
     
+def profile(request):
+    email = request.session.get('user_email')
+    if email is not None:
+        user = User.objects.get(email = email)
+    
+        context = {
+            'user':user,
+        }
+
+        return HttpResponse(profile_page.render(context, request))
+    else:
+        return HttpResponse(profile_page.render({}, request))
+    
 def create_menu(request):
     days = Day.objects.all().values()
     context = {
@@ -219,7 +233,7 @@ def cart(request):
         mltprice = None
         mdtprice = None
         monday_total_price = 0
-        messages.info(request, "No items added")
+
 
     ## TUESDAY ##
     try:
@@ -248,7 +262,6 @@ def cart(request):
         tltprice = None
         tdtprice = None
         tuesday_total_price = 0
-        messages.info(request, "No items added")
 
     ## WEDNESDAY ##
     try:
@@ -277,7 +290,7 @@ def cart(request):
         wltprice = None
         wdtprice = None
         wednesday_total_price = 0
-        messages.info(request, "No items added")
+
 
     ## THURSDAY ##
     try:
@@ -306,7 +319,7 @@ def cart(request):
         thltprice = None
         thdtprice = None
         thursday_total_price = 0
-        messages.info(request, "No items added")
+
 
     ## FRIDAY ##
     try:
@@ -335,7 +348,7 @@ def cart(request):
         fltprice = None
         fdtprice = None
         friday_total_price = 0
-        messages.info(request, "No items added")
+
 
     ## SATURDAY ##
     try:
@@ -364,7 +377,7 @@ def cart(request):
         saltprice = None
         sadtprice = None
         saturday_total_price = 0
-        messages.info(request, "No items added")
+
 
     ## SUNDAY ##
     try:
@@ -393,7 +406,7 @@ def cart(request):
         sultprice = None
         sudtprice = None
         sunday_total_price = 0
-        messages.info(request, "No items added")
+
 
     try:
         total_week_price = monday_total_price + tuesday_total_price + wednesday_total_price + thursday_total_price + friday_total_price + saturday_total_price + sunday_total_price

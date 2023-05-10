@@ -3,7 +3,7 @@ from .models import CartItem
 def gen_od_id():
     
     if CartItem.objects.filter(order_id__istartswith = 'DW').last() == None:
-        new_oid = "DW0001"
+        new_oid = "DW001"
         return new_oid
     
     last_oid = last_oid = CartItem.objects.filter(order_id__istartswith = 'DW').last().order_id
@@ -17,7 +17,7 @@ def gen_od_id():
         new_oid = init+z_sl
         return new_oid
     else:
-        new_id = "DW0001"
+        new_id = "DW001"
         return new_id
 
     
