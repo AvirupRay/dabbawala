@@ -184,10 +184,10 @@ body
 }
 .addbtn:hover
 {
-    background-color: rgb(0, 255, 255);
+    background-color: rgb(255, 255, 255);
     transition: 0.25s;
     transition-delay: 0.25s;
-    color: crimson;
+    color: black;
 
 }
 .products2
