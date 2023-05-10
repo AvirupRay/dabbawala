@@ -85,7 +85,7 @@ body
 .products
 {
     height: 100px;
-    width: 1400px;
+    width: 1025px;
     margin: 0 auto;
 }
 .icon
@@ -110,18 +110,19 @@ body
     padding-top: 25px;
     padding-left: 50px;
     font-size: 45px;
-    margin-left: 50px;
+    margin: auto;
     border-radius: 50px 0px 0px 50px;
 }
 .info2
 {
     background-color: crimson;
     height: 100px;
-    width: 150px;
+    width: 100px;
     display: inline-block;
     border-radius: 0px 50px 50px 0px;
     vertical-align: top;
     text-align: center;
+    margin-left: 5px;
 }
 .ibtn
 {
@@ -156,9 +157,9 @@ body
     padding-left: 15px;
     padding-right: 15px;
 }
-.add
+/*.add
 {
-    background-color: greenyellow;
+    background-color: black;
     height: 100px;
     width: 100px;
     margin-left: 50px;
@@ -167,21 +168,25 @@ body
     text-align: center;
     font-size: 90px;
     border-radius: 100%;
-}
+}*/
 .addbtn
 {
-    background-color: greenyellow;
-    height: 100px;
-    width: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 80px;
+    width: 80px;
     vertical-align: top;
     border-radius: 100%;
-    font-size:90px ;
+    font-size: 70px ;
     border: none;
+    margin: 10px;
+    right: 0px;
+    color: yellow;
 }
 .addbtn:hover
 {
-    background-color: cyan;
+    background-color: rgb(0, 255, 255);
     transition: 0.25s;
+    transition-delay: 0.25s;
     color: crimson;
 
 }
